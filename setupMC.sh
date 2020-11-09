@@ -37,11 +37,11 @@ fi
 echo Setup 4/9
 if [ "$MACHINE" = "aarch64" ]; then
     if [ ! -f jdk-8u251-linux-arm64-vfp-hflt.tar.gz ]; then
-        wget https://www.dropbox.com/s/ft7fwlrjq5cnu87/jdk-8u251-linux-arm64-vfp-hflt.tar.gz
+        wget https://github.com/mikehooper/Minecraft/blob/main/jdk-8u251-linux-arm64-vfp-hflt.tar.gz
     fi
 else
     if [ ! -f jdk-8u251-linux-arm32-vfp-hflt.tar.gz ]; then
-        wget https://www.dropbox.com/s/mwelmbpq7vvs7pp/jdk-8u251-linux-arm32-vfp-hflt.tar.gz
+        wget https://github.com/mikehooper/Minecraft/blob/main/jdk-8u251-linux-arm32-vfp-hflt.tar.gz
     fi
 fi
 
@@ -49,14 +49,14 @@ fi
 echo Setup 5/9
 if [ "$MACHINE" = "aarch64" ]; then
     if [ ! -f lwjgl3arm64.tar.gz ]; then
-        wget https://www.dropbox.com/s/0x765uoy6ihj3gr/lwjgl3arm64.tar.gz
+        wget https://github.com/mikehooper/Minecraft/blob/main/lwjgl3arm64.tar.gz
     fi
 else
     if [ ! -f lwjgl3arm32.tar.gz ]; then
-        wget https://www.dropbox.com/s/xzegvb4srsuvhl3/lwjgl3arm32.tar.gz
+        wget https://github.com/mikehooper/Minecraft/blob/main/lwjgl3arm32.tar.gz
     fi
     if [ ! -f lwjgl2arm32.tar.gz ]; then
-        wget https://www.dropbox.com/s/ew7jnw7noygpkny/lwjgl2arm32.tar.gz
+        wget https://github.com/mikehooper/Minecraft/blob/main/lwjgl2arm32.tar.gz
     fi
 fi
 
