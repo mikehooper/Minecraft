@@ -1,6 +1,13 @@
 #!/bin/sh -e
 
-MACHINE=$(uname -m)
+#determine if host system is 64 bit arm64 or 32 bit armhf
+if [ ! -z "$(file "$(readlink -f "/sbin/init")" | grep 64)" ];then
+  MACHINE='aarch64'
+elif [ ! -z "$(file "$(readlink -f "/sbin/init")" | grep 32)" ];then
+  MACHINE='armv7l'
+else
+  echo "Failed to detect OS CPU architecture! Something is very wrong."
+fi
 DIR=~/Minecraft
 
 # create folders
